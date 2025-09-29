@@ -1,7 +1,30 @@
+/**
+ * @file styles.css
+ * @description This stylesheet provides the visual styling for the Simon game.
+ * It includes styles for the game layout, buttons, color themes, and visual feedback animations.
+ * @author [Manav Juneja]
+ */
+
+/*--------------------------------------------------------------------------------*/
+/* # General Styles                                                               */
+/*--------------------------------------------------------------------------------*/
+
+/**
+ * Universal selector to apply center alignment to all text elements on the page.
+ */
 * {
     text-align: center;
 }
 
+
+/*--------------------------------------------------------------------------------*/
+/* # Button & Layout Styles                                                       */
+/*--------------------------------------------------------------------------------*/
+
+/**
+ * Base styling for all game buttons.
+ * Defines the size, border radius for a "squircle" shape, border, and margin.
+ */
 .btn {
     height: 200px;
     width: 200px;
@@ -10,10 +33,23 @@
     margin: 1.5rem;
 }
 
+/**
+ * Styles the container holding the game buttons.
+ * Uses flexbox to center the buttons horizontally on the page.
+ */
 .btn-container {
     display: flex;
     justify-content: center;
 }
+
+
+/*--------------------------------------------------------------------------------*/
+/* # Button Color Themes                                                          */
+/*--------------------------------------------------------------------------------*/
+
+/*
+ * Defines the unique background color for each of the four game buttons.
+ */
 
 .yellow {
     background-color: #f99b45;
@@ -31,10 +67,23 @@
     background-color: #819ff9;
 }
 
+
+/*--------------------------------------------------------------------------------*/
+/* # Feedback & Animation Styles                                                  */
+/*--------------------------------------------------------------------------------*/
+
+/**
+ * Flash effect for when the game sequence is demonstrated to the user.
+ * Changes the button's background to white temporarily.
+ */
 .flash {
     background-color: #fff;
 }
 
+/**
+ * Flash effect for when the user clicks a button.
+ * Changes the button's background to green to provide immediate visual feedback.
+ */
 .userflash {
     background-color: #008000;
 }

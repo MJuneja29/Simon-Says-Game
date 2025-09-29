@@ -1,23 +1,51 @@
+<!--
+  @file index.html
+  @description The main HTML structure for the Simon Says game.
+  This file sets up the game's title, instructions, and the button container.
+  It links the necessary CSS for styling and the JavaScript file for game logic.
+  @author [Manav Juneja]
+-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Basic page metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage, displayed in the browser tab -->
     <title>Simon Says Game</title>
+
+    <!-- Link to the external stylesheet for styling the game -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- Main heading for the game -->
     <h1>Simon Says Game</h1>
+
+    <!-- Subheading used to display game instructions and status updates (e.g., current level) -->
     <h2>Press any key to start the game</h2>
 
+    <!-- Main container for all the game buttons -->
     <div class="btn-container">
 
+        <!-- First row of buttons -->
         <div class="line-one">
+            <!--
+              Game Button: Red
+              - The 'btn' class provides base styling.
+              - The 'red' class sets the specific color.
+              - The 'id' is used by the JavaScript to identify which button was pressed.
+              - Note: Using a 'div' as a button is common for simple projects,
+                but for better accessibility, <button> elements are preferred.
+            -->
             <div class="btn red" type="button" id="red">1</div>
             <div class="btn yellow" type="button" id="yellow">2</div>
         </div>
+
+        <!-- Second row of buttons -->
         <div class="line-two">
             <div class="btn green" type="button" id="green">3</div>
             <div class="btn purple" type="button" id="purple">4</div>
@@ -25,6 +53,11 @@
 
     </div>
 
+    <!--
+      Script tag for the game's logic.
+      Placed at the end of the body to ensure the HTML document is fully loaded
+      and parsed before the script attempts to manipulate any DOM elements.
+    -->
     <script src="app.js"></script>
 </body>
 

@@ -1,6 +1,6 @@
 /**
  * @file A simple Simon game implementation in JavaScript.
- * @author [Your Name]
+ * @author [Manav Juneja]
  */
 
 //--------------------------------------------------------------------------------
